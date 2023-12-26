@@ -6,7 +6,7 @@ ExpressTranslateChat is a real-time chat translator built with Node.js and Expre
 
 This project enables users to send messages in one language, and the messages are translated in real-time based on the preferred language of the recipient. The communication is facilitated using Socket.io, and translation is performed using a translation API (e.g., Google Translate).
 
-![Coding GIF](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif)
+![Translator GIF](https://media4.giphy.com/media/UjYn0QffVnZhYcJ7Rl/giphy.gif?cid=ecf05e471x5maud9snzwy0xbuq3yo9gvmbpzbm4uj8tqgl7x&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ## Features
 
