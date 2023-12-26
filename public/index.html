@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpressTranslateChat</title>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <!-- Add an input for the target language -->
+    <form action="" id="form" autocomplete="off">
+      <input id="m" autocomplete="off" />
+      <input id="targetLanguage" placeholder="Target Language" />
+      <button>Send</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      $(function () {
+        var socket = io();
+        $("form").submit(function () {
+          socket.emit("chat message", $("#m").val());
+          $("#m").val("");
+          return false;
+        });
+        socket.on("chat message", function (msg) {
+          $("#messages").append($("<li>").text(msg));
+        });
+      });
+    </script>
+  </body>
+</html>
