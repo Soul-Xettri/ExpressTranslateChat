@@ -27,7 +27,7 @@ This project enables users to send messages in one language, and the messages ar
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/ExpressTranslateChat.git
+    git clone https://github.com/soul-xettri/ExpressTranslateChat.git
     cd ExpressTranslateChat
     ```
 
